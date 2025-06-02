@@ -1,36 +1,212 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 TaskBoard – Web3 Task Management Application
 
-## Getting Started
+A modern, responsive task management app built with **Next.js**, featuring **Web3 wallet authentication**, **IndexedDB storage**, and a stunning **hero-style UI with glassmorphism**.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔐 **Web3 Authentication**: Connect with MetaMask or any Web3 wallet via **Ethers.js**
+- 📱 **Responsive Design**: Optimized for both desktop and mobile
+- 💾 **Client-side Storage**: Tasks saved securely in the browser using **IndexedDB**
+- 👤 **Random Profile Avatars**: Generated using the **Picsum API**
+- 🧊 **Modern UI**: Beautiful glassmorphism effects with a hero-style layout
+- ✅ **Task Management**: Create, edit, delete, and move tasks between statuses
+- 🚦 **Priority Levels**: Assign High, Medium, or Low priority with color-coded labels
+- ⚡ **Real-time Updates**: Drag-and-drop feel for instant task status changes
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Next.js 14, React 19
+- **Styling**: Tailwind CSS with custom gradients and animations
+- **Web3**: Ethers.js for wallet integration
+- **Database**: IndexedDB for client-side task storage
+- **Icons**: Lucide React
+- **Deployment**: Vercel (recommended)
+
+---
+
+## 📱 Screenshots
+
+The application includes:
+
+- **Login Page**: Web3 wallet connection with a hero background
+- **Task Dashboard**: Three-column Kanban board (To Do, In Progress, Completed)
+- **Task Modal**: Create/edit tasks with priority and status selection
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- MetaMask or any Web3 wallet extension
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repo-url>
+cd taskboard-nextjs
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Building for Production
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment Guide
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy to Vercel (Recommended)
 
-## Deploy on Vercel
+Install Vercel CLI:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm i -g vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy your app:
+
+```bash
+vercel
+```
+
+Follow the CLI prompts to:
+
+- Link your GitHub repository
+- Configure project settings
+- Deploy!
+
+### Alternative: Deploy via Vercel Dashboard
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your GitHub repository
+4. Configure build settings (auto-detected for Next.js)
+5. Deploy!
+
+### Deploy to Netlify
+
+Build the project:
+
+```bash
+npm run build
+```
+
+Deploy the `out` folder to Netlify and add this to `netlify.toml`:
+
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+### Deploy to Firebase Hosting
+
+Install Firebase CLI:
+
+```bash
+npm install -g firebase-tools
+```
+
+Initialize Firebase:
+
+```bash
+firebase init hosting
+```
+
+Build and deploy:
+
+```bash
+npm run build
+firebase deploy
+```
+
+---
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_APP_NAME=TaskBoard
+NEXT_PUBLIC_APP_DESCRIPTION=Web3 Task Management Application
+```
+
+---
+
+## 💅 Tailwind Configuration
+
+The project uses custom Tailwind CSS configurations for:
+
+- Gradient animations
+- Glassmorphism effects
+- Custom color schemes
+- Responsive breakpoints
+
+---
+
+## 📊 Database Schema
+
+**Tasks Collection (IndexedDB)**
+
+```javascript
+{
+  id: string,
+  title: string,
+  description: string,
+  status: 'todo' | 'in-progress' | 'completed',
+  priority: 'low' | 'medium' | 'high',
+  userAddress: string
+}
+```
+
+---
+
+## 📄 License
+
+MIT License. Feel free to fork, contribute, and improve the project!
+
+---
+
+## 🙌 Contributions
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 💬 Contact
+
+For questions or collaboration, feel free to open an issue or reach out directly.
