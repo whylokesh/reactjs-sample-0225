@@ -1,6 +1,8 @@
 # 🚀 TaskBoard – Web3 Task Management Application
 
-🔗 **Live Demo**: [https://reactjs-sample-0225-xslu.vercel.app/](https://reactjs-sample-0225-xslu.vercel.app/)
+🔗 **Live Demo**: [https://reactjs-sample-0225-xslu.vercel.app/](https://reactjs-sample-0225-xslu.vercel.app/)  
+🎥 **Video Demo**: [Watch on Loom](https://www.loom.com/share/fe3029dff4524736ac820c21966f5529?sid=87bbbef9-51cc-41eb-9721-370396c71bd8)
+
 
 A modern, responsive task management app built with **Next.js**, featuring **Web3 wallet authentication**, **IndexedDB storage**, and a stunning **hero-style UI with glassmorphism**.
 
