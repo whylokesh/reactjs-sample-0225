@@ -37,8 +37,14 @@ A modern, responsive task management app built with **Next.js**, featuring **Web
 The application includes:
 
 - **Login Page**: Web3 wallet connection with a hero background
+  ![image](https://github.com/user-attachments/assets/e32dccda-d23f-4543-a2a7-4f622f6209fb)
+
 - **Task Dashboard**: Three-column Kanban board (To Do, In Progress, Completed)
+  ![image](https://github.com/user-attachments/assets/cda407db-4c92-4c82-94e2-894adeb97274)
+
 - **Task Modal**: Create/edit tasks with priority and status selection
+  ![image](https://github.com/user-attachments/assets/4e27e3c5-da24-484f-81c2-08e2e71ea14d)
+
 
 ---
 
