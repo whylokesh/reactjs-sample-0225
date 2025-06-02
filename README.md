@@ -1,5 +1,7 @@
 # 🚀 TaskBoard – Web3 Task Management Application
 
+🔗 **Live Demo**: [https://reactjs-sample-0225-xslu.vercel.app/](https://reactjs-sample-0225-xslu.vercel.app/)
+
 A modern, responsive task management app built with **Next.js**, featuring **Web3 wallet authentication**, **IndexedDB storage**, and a stunning **hero-style UI with glassmorphism**.
 
 ---
@@ -80,76 +82,6 @@ Open your browser and navigate to: [http://localhost:3000](http://localhost:3000
 ```bash
 npm run build
 npm start
-```
-
----
-
-## 🌐 Deployment Guide
-
-### Deploy to Vercel (Recommended)
-
-Install Vercel CLI:
-
-```bash
-npm i -g vercel
-```
-
-Deploy your app:
-
-```bash
-vercel
-```
-
-Follow the CLI prompts to:
-
-- Link your GitHub repository
-- Configure project settings
-- Deploy!
-
-### Alternative: Deploy via Vercel Dashboard
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your GitHub repository
-4. Configure build settings (auto-detected for Next.js)
-5. Deploy!
-
-### Deploy to Netlify
-
-Build the project:
-
-```bash
-npm run build
-```
-
-Deploy the `out` folder to Netlify and add this to `netlify.toml`:
-
-```toml
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-```
-
-### Deploy to Firebase Hosting
-
-Install Firebase CLI:
-
-```bash
-npm install -g firebase-tools
-```
-
-Initialize Firebase:
-
-```bash
-firebase init hosting
-```
-
-Build and deploy:
-
-```bash
-npm run build
-firebase deploy
 ```
 
 ---
